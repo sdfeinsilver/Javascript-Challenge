@@ -2,7 +2,7 @@
 
 //1. Check that you have access to data in javascript file
 console.log(data);
-    //Check: Data successfully logged in console!
+//Check: Data successfully logged in console!
 
 //2. Assign the data to a descriptive variable
 let ufoSightings = data
@@ -17,10 +17,18 @@ let tbody = d3.select("tbody");
 data.forEach(function (ufoSighting) {
     console.log(ufoSighting);
 });
-    //Check: Individual objects were successfully logged in console
+//Check: Individual objects were successfully logged in console
 
 //6. Create event handler for button 
 button.on("click", filterTable);
 
+//7. Create function that will filter table by date
+function filterTable(date) {
+
+    // Prevent the page from refreshing
+    event.preventDefault();
 
 
+
+    data.forEach(function ())
+}
