@@ -4,14 +4,23 @@
 console.log(data);
     //Check: Data successfully logged in console!
 
-//2. Get a handle on the table body
+//2. Assign the data to a descriptive variable
+let ufoSightings = data
+
+//3. Select the button
+let button = d3.select("#filter-btn");
+
+//4. Get a handle on the table body
 let tbody = d3.select("tbody");
 
-//3. use forEach loop to loop through data and print each object to console
+//5. Use forEach loop to loop through data and print each object to console
 data.forEach(function (ufoSighting) {
     console.log(ufoSighting);
 });
     //Check: Individual objects were successfully logged in console
+
+//6. Create event handler for button 
+button.on("click", filterTable);
 
 
 
